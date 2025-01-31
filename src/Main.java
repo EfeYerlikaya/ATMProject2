@@ -27,12 +27,27 @@ public class Main {
             } else if (input == 2) {
                 System.out.println("Çekmek istediğiniz miktar");
                 miktar = sc.nextInt();
-                bakiye -= miktar;
+                
                 if (miktar > bakiye){
                     System.out.println("Yetersiz bakiye");
+                 } else {
+                    bakiye -= miktar;
                 }
 
+            } else if (input == 3) {
+                System.out.println("Güncel bakiyeniz =" + bakiye);
+
+
+            } else if (input == 4) {
+
+                System.out.println("Çıkış yapılıyor.");
+                break;
+
+            } else {
+                System.out.println("Geçersiz işlem yaptınız.1");
             }
+
+            
 
 
         }
