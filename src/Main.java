@@ -20,6 +20,21 @@ public class Main {
             System.out.print("Yapmak istegiğiniz işlemi seçiniz");
             input = sc.nextInt();
 
+            if (input == 1){
+                System.out.println("Yatırmak istediğiniz miktar");
+                 miktar = sc.nextInt();
+                bakiye += miktar;
+            } else if (input == 2) {
+                System.out.println("Çekmek istediğiniz miktar");
+                miktar = sc.nextInt();
+                bakiye -= miktar;
+                if (miktar > bakiye){
+                    System.out.println("Yetersiz bakiye");
+                }
+
+            }
+
+
         }
         System.out.println("Tekrar Bekleriz.");
 
